@@ -52,7 +52,7 @@ sudo systemctl restart bind9
 
 # Create Docker containers with vulnerable web servers
 for i in {1..5}; do
-    sudo docker run -d --name web$i --network vuln_network --ip 10.0.0.$((i+2)) -h web$i.vuln.test -v /var/www/html/web$i:/usr/local/apache2/htdocs/ httpd:2.4.29
+    sudo docker run -d --name web$i --network vuln_network --ip 10.0.0.$((i+2)) -h web$i.vuln.test -v /var/www/html/web$i:/usr/local/apache2/htdocs/ --memory="256m" --cpus="0.5" httpd:2.4.29
 done
 
 # Create index.html for each web server
