@@ -1,13 +1,5 @@
-# vuln_webservers
-Sets up 5 Docker containers with different vulnerable web servers. Each web server's homepage will display the hostname, IP address, web server version, and Docker image info.
+Here's the updated `README.md` file with the correct GitHub URL and script name:
 
-
-Here's a `README.md` file for your script, along with a suggested name for the script file.
-
-### Script Name
-You can name the script `setup_vuln_webservers.sh`.
-
-### README.md
 ```markdown
 # Vulnerable Web Servers Setup Script
 
@@ -24,8 +16,8 @@ This repository contains a bash script to set up five vulnerable web servers on 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/vulnmachine.git
-   cd vulnmachine
+   git clone https://github.com/randumduck/vuln_webservers.git
+   cd vuln_webservers
    ```
 
 2. **Make the script executable**:
